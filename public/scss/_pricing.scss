@@ -1,0 +1,161 @@
+/***
+
+==================================================================
+    Pricing Section
+==================================================================
+
+***/
+
+.pricing-section{
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0 80px;
+    .bg{
+        max-height: 670px;
+    }
+}
+
+.pricing-block {
+    position: relative;
+    margin-bottom: 40px;
+    z-index: 2;
+    transition: all 300ms ease;
+    .inner-box {
+        position: relative;
+        padding: 40px 50px 40px;
+        background-color: #fff;
+        transition: all 300ms ease;
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,.10);
+        background-image: url(../images/icons/price-bg.jpg);
+        @include background;
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 30px;
+            height: 100%;
+            width: 100%;
+            background-image: url(../images/icons/price-hover-bg.jpg);
+            @include background;
+            content: "";
+            opacity: 0;
+            transition: all 300ms ease;
+        }
+        &:hover{
+            transform: translateY(-15px);
+        }
+    }    
+    .title-box{
+        position: relative;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: 30px;
+    }
+    .title{
+        position: relative;
+        font-weight: 800;
+        letter-spacing: .01em;
+        margin-bottom: 15px;
+        transition: all 300ms ease;
+    }
+
+    .text{
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #6c6a72;
+        transition: all 300ms ease;
+    }
+
+    .price {
+        position: relative;
+        display: block;
+        font-size: 60px;
+        font-weight: 900;
+        margin-bottom: 25px;
+        transition: all 300ms ease;
+        sup{
+            position: relative;
+            top: -18px;
+            font-size: 28px;
+            font-weight: 700;
+            margin-right: 3px;
+        }
+        sub{
+            position: relative;
+            font-size: 16px;
+            line-height: 30px;
+            color: #6c6a72;
+            transition: all 300ms ease;
+            font-weight: 400;
+            letter-spacing: .01em;
+            margin-left: 10px;
+            bottom: 0px;
+        }
+    }
+
+    .sub-title{
+        position: relative;
+        color: var(--theme-color2);
+        margin-bottom: 25px;
+        transition: all 300ms ease;
+    }
+
+    .features {
+        position: relative;
+        margin-bottom: 40px;
+        li {
+            position: relative;
+            display: block;
+            font-size: 16px;
+            line-height: 26px;
+            color: #1d1729;
+            font-weight: 700;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            transition: all 300ms ease;
+            &:before{
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 16px;
+                line-height: 26px;
+                color: var(--theme-color1);
+                content: "\f101";
+                font-family: "Font Awesome 6 Pro";
+                transition: all 300ms ease;
+            }
+            &.false{
+                opacity: .5;
+            }
+        }
+    }
+
+    .theme-btn{
+        line-height: 24px;
+        padding: 15px 40px;
+    }
+
+    &.tagged{
+        .inner-box{
+            background-color: #23252a;
+            &:before{
+                opacity: 1;
+                top: 0;
+            }
+        }
+        .features li,
+        .features li:before,
+        .price,
+        .price sub,
+        .text,
+        .title{
+            color: #fff;
+        }
+        .title-box{
+            border-bottom: 1px solid #5d5d5d;
+        }
+    }
+}
+

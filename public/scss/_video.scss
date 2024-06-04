@@ -1,0 +1,110 @@
+/*** 
+
+====================================================================
+    Video Section
+====================================================================
+
+***/
+
+.video-section{
+    position: relative;
+    padding: 140px 0 185px;
+    text-align: center;
+    background-color: var(--bg-theme-color1);
+    .bg-image{
+        @include overlay;
+        @include background;
+        background-image: url(../images/icons/pattern-6.jpg);
+        content: "";
+        max-height: 610px;
+    }
+    .play-now{
+        position: relative;
+        display: inline-block;
+    }
+}
+
+/*** 
+
+====================================================================
+    Video Section TWO
+====================================================================
+
+***/
+
+.video-section-two{
+    position: relative;
+    z-index: 1;
+    .video-box-two{
+        position: relative;
+        .image{
+            position: relative;
+            margin-bottom: 0;
+        }
+        .play-now{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            .icon{
+                background-color: #ffffff;
+                color: var(--theme-color2);
+            }
+        }
+        .info-box{
+            position: absolute;
+            right: 30px;
+            top: -30px;
+            background-color: var(--bg-theme-color2);
+            padding: 40px 50px;
+            border-radius: 5px;
+            .title{
+                font-size: 50px;
+                color: #ffffff;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            .text{
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: 600;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Video Section Three
+====================================================================
+
+***/
+
+.video-section-three{
+    position: relative;
+    z-index: 1;
+    .video-box-three{
+        position: relative;
+        .image{
+            margin-bottom: 0;
+        }
+        .play-btn{
+            @include overlay;
+            z-index: 2;
+            .icon{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 122px;
+                height: 120px;
+                background-color: var(--bg-theme-color2);
+                @include flex-center;
+                color: #ffffff;
+                font-size: 20px;
+            }
+        }
+    }
+}

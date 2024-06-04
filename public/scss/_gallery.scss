@@ -1,0 +1,159 @@
+/*** 
+
+====================================================================
+	Gallery Section
+====================================================================
+
+***/
+
+.gallery-section {
+    position: relative;
+    padding: 120px 0;
+    z-index: 1;
+    background-color: transparent;
+    .carousel-outer{
+        margin-left: -200px;
+        margin-right: -200px;
+    }
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    img {
+        display: inline-block;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+    a {
+        position: relative;
+        display: block;
+        &:after,
+        &:before {
+            @include overlay;
+            content: "";
+            z-index: 1;
+            transition: all 300ms ease;
+            transform: scale(.7);
+            opacity: 0;
+            visibility: hidden;
+            @include flex-center;
+            font-family: 'linearicons-free';
+            color: #ffffff;
+            font-size: 42px;
+            content: "\e051";
+        }
+        &:after{
+            background: var(--gradient-2);
+        }
+
+        &:hover{
+            &:after,
+            &:before {
+                transform: scale(1);
+                opacity: 1;
+                visibility: visible;
+            }
+            &:after{
+                opacity: .9;
+            }
+        }
+    }
+
+    &:hover img {
+        opacity: 1;
+        transform: scale(1.1);
+        border-radius: 10px;
+    }
+}
+
+.gallery-carousel .owl-nav,
+.gallery-carousel .owl-dots {
+    display: none;
+}
+
+/*** 
+
+====================================================================
+	Gallery Section Two
+====================================================================
+
+***/
+
+.gallery-section-two{
+    position: relative;
+    padding: 120px 0;
+    z-index: 1;
+}
+
+.gallery-item-two{
+    position: relative;
+    overflow: hidden;
+    .image-box{
+        position: relative;
+        overflow: hidden;
+        .image{
+            position: relative;
+            margin-bottom: 0;
+            &:after,
+            &:before{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                background-image: linear-gradient(transparent, var(--bg-theme-color1));
+                z-index: 1;
+                content: "";
+                pointer-events: none;
+                transition: all 300ms ease;
+            }
+            &:after{
+                background-image: linear-gradient(transparent, var(--bg-theme-color2));
+                height: 0;
+                z-index: 1;
+            }
+            img {
+                display: inline-block;
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                transition: all 0.3s ease;
+                min-height: 300px;
+                object-fit: cover;
+            }
+            a {
+                position: relative;
+                display: block;
+            }
+        }
+    }
+    &:hover  {
+        img{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        .image::before{
+            height: 0%;
+        }
+        .image::after{
+            height: 100%;
+        }
+    }
+    .caption-box{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 40px 40px;
+        width: 100%;
+        text-align: left;
+        z-index: 2;
+        .title{
+            margin-bottom: 0;
+            color: #ffffff;
+        }
+    }
+}

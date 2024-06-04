@@ -1,0 +1,100 @@
+/***
+
+====================================================================
+    Process Section
+====================================================================
+
+***/
+
+.process-section{
+    position: relative;
+    padding: 120px 0 80px;
+    .auto-container{
+        max-width: 1050px;
+    }
+}
+
+.process-block{
+    position: relative;
+    margin-bottom: 40px;
+    &:last-child{
+        .image-box:before{
+            display: none;
+        }
+    }
+    .inner-box {
+        position: relative;
+        &:hover {
+            .info-box{
+                background-color: #ffffff;
+                box-shadow: 0 10px 50px rgba(0,0,0,.10);
+            }
+            .icon{
+                background-color: #ffffff;
+                color: var(--theme-color2);
+                &:after{
+                    height: 136px;
+                    width: 136px;
+                }
+            }
+        }
+    }
+
+    .icon-box {
+        position: relative;
+        padding-top: 60px;
+        &::before{
+            position: absolute;
+            left: 60px;
+            top: 0;
+            width: 190px;
+            height: 146px;
+            background-image: url(../images/icons/process-arrow.png);
+            content: "";
+        }
+        .icon{
+            position: relative;
+            @include flex-center;
+            height: 136px;
+            width: 136px;
+            border-radius: 50%;
+            margin-bottom: 50px;
+            color: #ffffff;
+            font-size: 72px;
+            background-color: var(--bg-theme-color2);
+            transition: all 300ms ease;
+            &:after{
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 160px;
+                width: 160px;
+                display: block;
+                background-color: #ffffff;
+                border-radius: 50%;
+                z-index: -1;
+                transition: all 300ms ease;
+                box-shadow: 0 10px 60px rgba(0,0,0,.10);
+                content: '';
+            }
+        }
+        .count {
+            position: absolute;
+            left: 140px;
+            top: 40px;
+            font-size: 120px;
+            color: #f3f3f3;
+            @include flex-center;
+            font-weight: 900;
+            z-index: 2;
+            opacity: .5;
+            transition: all 300ms linear;
+        }
+    }
+    .title {
+        z-index: 2;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+}
+

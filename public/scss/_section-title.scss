@@ -1,0 +1,72 @@
+/*** 
+
+====================================================================
+Section Title
+====================================================================
+
+***/
+
+.sec-title {
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 2;
+    .sub-title {
+        position: relative;
+        top: -8px;
+        font-size: var(--sec-title-subtitle-font-size);
+        color: var(--sec-title-subtitle-color);
+        line-height: var(--sec-title-subtitle-line-height);
+        font-weight: var(--sec-title-subtitle-font-weight);
+        font-family: var(--sec-title-subtitle-font-family);;
+        display: inline-block;
+        padding-left: 20px;
+        &:before {
+            position: absolute;
+            left: 0;
+            top:0;
+            letter-spacing: .2em;
+            content: "//";
+            color: var(--theme-color2);
+        }
+    }
+    h1 {
+        position: relative;
+        font-size: 60px;
+        line-height: 1em;
+        color: var(--sec-title-color);
+        font-family: var(--sec-title-font-family);
+        font-weight: var(--sec-title-font-weight);
+    }
+    h2 {
+        position: relative;
+        font-size: var(--sec-title-font-size);
+        color: var(--sec-title-color);
+        font-family: var(--sec-title-font-family);
+        font-weight: var(--sec-title-font-weight);
+        margin-top: -5px;
+        margin-bottom: 0;
+    }
+    .text {
+        margin-top: 30px;
+    }
+}
+
+.sec-title .row{
+    .text{
+        max-width: 450px;
+        width: 100%;
+    }
+}
+
+.sec-title.light{
+    h3,
+    h2,
+    h1{
+        color: #fff;
+    }
+    .sub-title,
+    .text{
+        color: #8f8f8f;
+    }
+
+}

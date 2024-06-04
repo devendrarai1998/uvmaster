@@ -1,0 +1,49 @@
+/*** 
+
+====================================================================
+  Main Slider
+====================================================================
+
+***/
+
+.main-slider {
+  position: relative;
+}
+
+.main-slider {
+  h1{
+    position: relative;
+    display: block;
+    font-size: 90px;
+    line-height: 1em;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .text{
+    font-size: 18px;
+    line-height: 36px;
+    color: rgba(255,255,255,.50);
+  }
+  .btn-box {
+    position: relative;
+  }
+  .theme-btn {
+    display: inline-block;
+    white-space: nowrap;
+    min-width: 200px !important;
+  }
+}
+
+
+.tp-dottedoverlay {
+  background-image: url(../images/main-slider/bg-pattern.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  opacity: .5;
+}
+
+.tp-bannertimer {
+  display: none;
+}

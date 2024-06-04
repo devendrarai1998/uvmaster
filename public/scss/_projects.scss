@@ -1,0 +1,214 @@
+/*** 
+
+====================================================================
+        Projects Section 
+====================================================================
+
+***/
+
+.projects-section{
+    position: relative;
+    padding: 120px 0;
+    &.pull-up{
+        padding-top: 200px;
+        margin-top: -100px;
+        .bg{
+            max-height: 490px;
+        }
+    }
+    .carousel-outer{
+        margin: 0 -260px;
+    }
+    .owl-item:nth-child(even){
+        .project-block{
+            .inner-box{
+                margin-top: 30px;
+            }
+        }
+    }
+    &.style-two{
+        .carousel-outer{
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            margin-right: -530px;
+        } 
+        .owl-item:nth-child(even) {
+            .project-block {
+                .inner-box {
+                    margin-top: 0;
+                }
+            }
+        }
+        .owl-nav{
+            position: absolute;
+            right: 530px;
+            top: -120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9;
+            .owl-next,
+            .owl-prev {
+                display: block;
+                margin: 0px 5px;
+                height: 52px;
+                width: 52px;
+                color: var(--theme-color1);
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 1);
+                font-size: 16px;
+                line-height: 52px;
+                font-weight: 700;
+                text-align: center;
+                transition: all 500ms ease;
+
+                &:hover {
+                    background-color: var(--bg-theme-color1);
+                    color: #ffffff;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+.project-block{
+    position: relative;
+    .inner-box {
+        position: relative;
+        &:hover {
+            .image-box .image {
+                img {
+                    transform: scale(1.1);
+                    opacity: .4;
+                }
+            }
+            .info-box {
+                opacity: 1;
+                visibility: visible;
+                bottom: 20px;
+            }
+        }
+    }
+
+    .image-box {
+        position: relative;
+        transition: all 300ms ease;
+        .image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 0;
+            background-color: var(--bg-theme-color1);
+            img {
+                width: 100%;
+                transition: all 300ms ease;
+            }
+        }
+    }
+
+    .info-box {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        padding: 25px 30px;
+        min-width: 270px;
+        transition: all 300ms ease;
+        border-radius: 0 10px 10px 0;
+        background-color: #ffffff;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        .title {
+            margin-bottom: 0;
+            &:hover {
+                color: var(--bg-theme-color2);
+            }
+        }
+    }
+
+    .read-more {
+        position: absolute;
+        @include flex-center;
+        right: 20px;
+        top: -26px;
+        height: 52px;
+        width: 52px;
+        font-size: 18px;
+        background-color:var(--bg-theme-color2);
+        border-radius: 50%;
+        color: #fff;
+        z-index: 3;
+        transition: all 300ms ease;
+        &:hover{
+            color: #ffffff;
+            background-color: var(--bg-theme-color1);
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+        Projects Section Two
+====================================================================
+
+***/
+
+.projects-section-two{
+    position: relative;
+    padding: 120px 0;
+    .bg-image{
+        @include overlay;
+        max-height: 660px;
+    }
+    .upper-box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 0;
+        border-bottom: 1px solid rgba(255,255,255,.10);
+        margin-bottom: 100px;
+        .text-column{
+            padding: 20px 0;
+            padding-left: 70px;
+            border-left: 1px solid rgba(255,255,255,.10);
+            max-width: 640px;
+        }
+        .count-box{
+            position: relative;
+            text-align: right;
+            .title{
+                padding-right: 10px;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+        .text{
+            font-size: 18px;
+            line-height: 36px;
+            color: #8f8f8f;
+        }
+        .numbers{
+            font-size: 100px;
+            color: var(--theme-color2);
+            font-weight: 800;
+            line-height: 1em;
+        }
+    }
+    .carousel-outer {
+        margin: 0 -260px;
+    }
+
+    .owl-item:nth-child(even) {
+        .project-block {
+            .inner-box {
+                margin-top: 0;
+            }
+        }
+    }
+}

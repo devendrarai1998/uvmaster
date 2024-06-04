@@ -1,0 +1,136 @@
+:root {
+  --dark-color1: #1C1E22;
+  --dark-color2: #222429;
+  --dark-color3: #2b242b;
+}
+
+body,
+.sticky-header.fixed-header,
+.page-wrapper {
+  background-color: var(--dark-color1);
+}
+
+.header-top .inner-container,
+.feature-block .inner-box:before {
+  background-color: var(--dark-color2);
+}
+
+.pricing-block.style-two .inner-box {
+  background-color: var(--dark-color3);
+}
+
+.btn-style-three,
+.work-tabs .tab-buttons .tab-btn {
+  background-color: #000;
+}
+
+.about-section-six .image-column .image-box:before {
+  background-color: var(--bg-theme-color2);
+}
+
+.service-block .inner-box {
+  border-color: var(--dark-color1);
+}
+
+.accordion-box .block .acc-btn {
+  border-color: var(--dark-color2) !important;
+}
+
+.clients-section.alternate,
+.pricing-block.style-two .price-box {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.title a,
+.sec-title h2 {
+  color: #fff;
+}
+
+.about-section .content-column .info-box:hover .title {
+  color: var(--dark-color1);
+}
+
+.project-section:before,
+.blockquote-style-one,
+.header-style-two {
+  background-color: unset;
+}
+
+.counter-block .inner {
+  background-image: unset;
+}
+
+.about-section-five:before,
+.about-section:before {
+  background-image: url(../images/icons/pattern-4-dark.png);
+}
+
+.testimonial-section:before {
+  background-image: url(../images/icons/pattern-5-dark.jpg);
+}
+
+.fun-fact-section-two .fact-counter:before {
+  background-image: url(../images/icons/Faunfacts.png);
+}
+
+.features-section-two:before,
+.news-section .bg-shape2 {
+  background-image: url(../images/icons/pattern-16.png);
+}
+
+.testimonial-section-three::before {
+  background-image: url(../images/icons/pattern-15-dark.png);
+}
+
+.team-section-two::before {
+  background-image: url(../images/icons/pattern-20-dark.png);
+}
+
+.work-section:before {
+  background-image: url(../images/icons/shape-10-dark.png);
+}
+
+.contact-section-four:before {
+  background-image: url(../images/icons/pattern-16.png);
+}
+
+.faqs-section.style-two:before {
+  background-image: url(../images/icons/pattern-21-dark.png);
+}
+
+.offer-section-three:before,
+.about-section-six:before {
+  background-image: url(../images/icons/pattern-7-dark-dark.png);
+}
+
+.feature-block-three .inner-box:before {
+  background-image: url(../images/icons/icon-lines-2-dark.png);
+}
+
+.icon-lines {
+  background-image: url(../images/icons/icon-lines-dark.png);
+}
+
+.news-section-two::before,
+.about-section-four:before {
+  background-image: url(../images/icons/shape-4-dark.png);
+  opacity: 0.15;
+}
+
+.contact-section:before {
+  opacity: 0.1;
+}
+
+.why-choose-us-two:before,
+.about-section-three:before {
+  opacity: 0.21;
+}
+
+.clients-carousel .slide-item img {
+  background-color: #f4f5f8;
+  opacity: 1;
+}
+
+.contact-form.light:before {
+  background-image: url(../images/icons/shape-5-dark.png);
+}

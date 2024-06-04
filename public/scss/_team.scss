@@ -1,0 +1,133 @@
+/***
+
+====================================================================
+    team Section
+====================================================================
+
+***/
+
+.team-section{
+    position: relative;
+    padding: 120px 0 80px;
+    overflow: hidden;
+}
+
+.team-block-two {
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box {
+        position: relative;
+        padding-right: 40px;
+        &:hover {
+            .image img {
+                transform: scale(1.1);
+            }
+            .social-links {
+                transform: scaleY(1);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .image-box {
+        position: relative;
+        &:before{
+            position: absolute;
+            left: 50px;
+            top: 30px;
+            bottom: 30px;
+            right: -30px;
+            background-image: url(../images/icons/team-bg.png);
+            content: "";
+            border-radius: 10px;
+        }
+        .image {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+            border-radius: 10px;
+            z-index: 1;
+            img {
+                width: 100%;
+                transition: all 400ms ease;
+            }
+        }
+        
+    }
+
+    .info-box {
+        position: relative;
+        padding: 20px 0 0;
+        .name {
+            font-weight: 800;
+            z-index: 2;
+            margin-bottom: 7px;
+            &:hover{
+                color: var(--theme-color2);
+            }
+        }
+        .designation {
+            position: relative;
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #6a6a6a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 2;
+            line-height: 1em;
+            transition: all 400ms ease;
+        }
+    }
+
+    .share-icon {
+        position: absolute;
+        right: 20px;
+        bottom: -25px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: var(--bg-theme-color2);
+        transition: all 300ms ease;
+        border-radius: 7px;
+        z-index: 3;
+    }
+
+    .social-links {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        padding: 15px 0;
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #ffffff;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        z-index: 3;
+        visibility: hidden;
+        opacity: 0;
+        border-radius: 8px 8px 0 0;
+        transition: all 400ms ease;
+        a {
+            position: relative;
+            height: 35px;
+            width: 50px;
+            display: block;
+            font-size: 14px;
+            line-height: 35px;
+            text-align: center;
+            color: var(--theme-color1);
+            transition: all 300ms ease;
+
+            &:hover {
+                color: var(--theme-color2);
+            }
+        }
+    }
+}

@@ -1,0 +1,549 @@
+$flaticon_visa-font: "flaticon_visa";
+
+@font-face {
+    font-family: $flaticon_visa-font;
+    src: url("./flaticon_visa.ttf?174fca3cf9482f9a46c19ed8e5d38c7f") format("truetype"),
+url("./flaticon_visa.woff?174fca3cf9482f9a46c19ed8e5d38c7f") format("woff"),
+url("./flaticon_visa.woff2?174fca3cf9482f9a46c19ed8e5d38c7f") format("woff2"),
+url("./flaticon_visa.eot?174fca3cf9482f9a46c19ed8e5d38c7f#iefix") format("embedded-opentype"),
+url("./flaticon_visa.svg?174fca3cf9482f9a46c19ed8e5d38c7f#flaticon_visa") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_visa !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_visa-map: (
+    "illegal": "\f101",
+    "take-off": "\f102",
+    "insurance": "\f103",
+    "visa": "\f104",
+    "business-trip": "\f105",
+    "insurance-1": "\f106",
+    "worldwide": "\f107",
+    "travel": "\f108",
+    "shield": "\f109",
+    "paid": "\f10a",
+    "plane-ticket": "\f10b",
+    "flight": "\f10c",
+    "visa-1": "\f10d",
+    "passport": "\f10e",
+    "insurance-2": "\f10f",
+    "embassy": "\f110",
+    "currency": "\f111",
+    "plane": "\f112",
+    "flight-1": "\f113",
+    "luggage": "\f114",
+    "identification-card": "\f115",
+    "rubber-stamp": "\f116",
+    "boarding-gate": "\f117",
+    "police": "\f118",
+    "law": "\f119",
+    "family": "\f11a",
+    "airport": "\f11b",
+    "visa-2": "\f11c",
+    "scale": "\f11d",
+    "priority-gate": "\f11e",
+    "passport-control": "\f11f",
+    "immigration": "\f120",
+    "flight-2": "\f121",
+    "tax": "\f122",
+    "exit": "\f123",
+    "toilet-signs": "\f124",
+    "accomodation": "\f125",
+    "illegal-1": "\f126",
+    "ticket": "\f127",
+    "passport-1": "\f128",
+    "route": "\f129",
+    "escalator": "\f12a",
+    "embassy-1": "\f12b",
+    "cafe": "\f12c",
+    "boarding-gate-1": "\f12d",
+    "check-in": "\f12e",
+    "translation": "\f12f",
+    "passport-2": "\f130",
+    "suitcase": "\f131",
+    "health-check": "\f132",
+    "departure": "\f133",
+    "signage": "\f134",
+    "directions": "\f135",
+    "luggage-1": "\f136",
+    "escalator-1": "\f137",
+    "airport-1": "\f138",
+    "global": "\f139",
+    "information": "\f13a",
+    "life-raft": "\f13b",
+    "exit-1": "\f13c",
+    "location": "\f13d",
+    "currency-1": "\f13e",
+    "bar-chart": "\f13f",
+    "disabled-sign": "\f140",
+    "passport-3": "\f141",
+    "destination": "\f142",
+    "passport-control-1": "\f143",
+    "smartphone": "\f144",
+    "refugee-camp": "\f145",
+    "free-wifi": "\f146",
+    "rubber-stamp-1": "\f147",
+    "protect": "\f148",
+    "checking": "\f149",
+    "briefcase": "\f14a",
+    "signage-1": "\f14b",
+    "stamp": "\f14c",
+    "passport-4": "\f14d",
+    "trolley": "\f14e",
+    "travel-1": "\f14f",
+    "customs-agent": "\f150",
+    "itinerary": "\f151",
+    "passport-5": "\f152",
+    "passport-6": "\f153",
+    "passport-7": "\f154",
+    "ticket-1": "\f155",
+    "check": "\f156",
+    "passport-8": "\f157",
+    "approved": "\f158",
+    "health-check-1": "\f159",
+    "passport-9": "\f15a",
+    "itinerary-1": "\f15b",
+    "passport-10": "\f15c",
+    "passport-11": "\f15d",
+    "immigration-1": "\f15e",
+    "licensing": "\f15f",
+    "increase": "\f160",
+    "passport-12": "\f161",
+    "group": "\f162",
+    "life-insurance": "\f163",
+    "job-interview": "\f164",
+    "passport-13": "\f165",
+    "cooperation": "\f166",
+    "rating": "\f167",
+    "check-list": "\f168",
+    "documents": "\f169",
+    "interview": "\f16a",
+    "camera": "\f16b",
+    "family-1": "\f16c",
+    "graduate": "\f16d",
+    "online-support": "\f16e",
+    "loyalty": "\f16f",
+    "low-cost": "\f170",
+    "approved-1": "\f171",
+    "global-1": "\f172",
+    "passport-14": "\f173",
+    "discount": "\f174",
+    "stamp-1": "\f175",
+    "help": "\f176",
+    "passport-15": "\f177",
+    "interview-1": "\f178",
+    "form": "\f179",
+    "visa-3": "\f17a",
+    "passport-16": "\f17b",
+    "passport-17": "\f17c",
+    "document": "\f17d",
+    "visa-4": "\f17e",
+    "passport-18": "\f17f",
+    "visa-5": "\f180",
+    "passport-19": "\f181",
+    "travel-2": "\f182",
+    "passport-20": "\f183",
+);
+
+.flaticon-illegal:before {
+    content: map-get($flaticon_visa-map, "illegal");
+}
+.flaticon-take-off:before {
+    content: map-get($flaticon_visa-map, "take-off");
+}
+.flaticon-insurance:before {
+    content: map-get($flaticon_visa-map, "insurance");
+}
+.flaticon-visa:before {
+    content: map-get($flaticon_visa-map, "visa");
+}
+.flaticon-business-trip:before {
+    content: map-get($flaticon_visa-map, "business-trip");
+}
+.flaticon-insurance-1:before {
+    content: map-get($flaticon_visa-map, "insurance-1");
+}
+.flaticon-worldwide:before {
+    content: map-get($flaticon_visa-map, "worldwide");
+}
+.flaticon-travel:before {
+    content: map-get($flaticon_visa-map, "travel");
+}
+.flaticon-shield:before {
+    content: map-get($flaticon_visa-map, "shield");
+}
+.flaticon-paid:before {
+    content: map-get($flaticon_visa-map, "paid");
+}
+.flaticon-plane-ticket:before {
+    content: map-get($flaticon_visa-map, "plane-ticket");
+}
+.flaticon-flight:before {
+    content: map-get($flaticon_visa-map, "flight");
+}
+.flaticon-visa-1:before {
+    content: map-get($flaticon_visa-map, "visa-1");
+}
+.flaticon-passport:before {
+    content: map-get($flaticon_visa-map, "passport");
+}
+.flaticon-insurance-2:before {
+    content: map-get($flaticon_visa-map, "insurance-2");
+}
+.flaticon-embassy:before {
+    content: map-get($flaticon_visa-map, "embassy");
+}
+.flaticon-currency:before {
+    content: map-get($flaticon_visa-map, "currency");
+}
+.flaticon-plane:before {
+    content: map-get($flaticon_visa-map, "plane");
+}
+.flaticon-flight-1:before {
+    content: map-get($flaticon_visa-map, "flight-1");
+}
+.flaticon-luggage:before {
+    content: map-get($flaticon_visa-map, "luggage");
+}
+.flaticon-identification-card:before {
+    content: map-get($flaticon_visa-map, "identification-card");
+}
+.flaticon-rubber-stamp:before {
+    content: map-get($flaticon_visa-map, "rubber-stamp");
+}
+.flaticon-boarding-gate:before {
+    content: map-get($flaticon_visa-map, "boarding-gate");
+}
+.flaticon-police:before {
+    content: map-get($flaticon_visa-map, "police");
+}
+.flaticon-law:before {
+    content: map-get($flaticon_visa-map, "law");
+}
+.flaticon-family:before {
+    content: map-get($flaticon_visa-map, "family");
+}
+.flaticon-airport:before {
+    content: map-get($flaticon_visa-map, "airport");
+}
+.flaticon-visa-2:before {
+    content: map-get($flaticon_visa-map, "visa-2");
+}
+.flaticon-scale:before {
+    content: map-get($flaticon_visa-map, "scale");
+}
+.flaticon-priority-gate:before {
+    content: map-get($flaticon_visa-map, "priority-gate");
+}
+.flaticon-passport-control:before {
+    content: map-get($flaticon_visa-map, "passport-control");
+}
+.flaticon-immigration:before {
+    content: map-get($flaticon_visa-map, "immigration");
+}
+.flaticon-flight-2:before {
+    content: map-get($flaticon_visa-map, "flight-2");
+}
+.flaticon-tax:before {
+    content: map-get($flaticon_visa-map, "tax");
+}
+.flaticon-exit:before {
+    content: map-get($flaticon_visa-map, "exit");
+}
+.flaticon-toilet-signs:before {
+    content: map-get($flaticon_visa-map, "toilet-signs");
+}
+.flaticon-accomodation:before {
+    content: map-get($flaticon_visa-map, "accomodation");
+}
+.flaticon-illegal-1:before {
+    content: map-get($flaticon_visa-map, "illegal-1");
+}
+.flaticon-ticket:before {
+    content: map-get($flaticon_visa-map, "ticket");
+}
+.flaticon-passport-1:before {
+    content: map-get($flaticon_visa-map, "passport-1");
+}
+.flaticon-route:before {
+    content: map-get($flaticon_visa-map, "route");
+}
+.flaticon-escalator:before {
+    content: map-get($flaticon_visa-map, "escalator");
+}
+.flaticon-embassy-1:before {
+    content: map-get($flaticon_visa-map, "embassy-1");
+}
+.flaticon-cafe:before {
+    content: map-get($flaticon_visa-map, "cafe");
+}
+.flaticon-boarding-gate-1:before {
+    content: map-get($flaticon_visa-map, "boarding-gate-1");
+}
+.flaticon-check-in:before {
+    content: map-get($flaticon_visa-map, "check-in");
+}
+.flaticon-translation:before {
+    content: map-get($flaticon_visa-map, "translation");
+}
+.flaticon-passport-2:before {
+    content: map-get($flaticon_visa-map, "passport-2");
+}
+.flaticon-suitcase:before {
+    content: map-get($flaticon_visa-map, "suitcase");
+}
+.flaticon-health-check:before {
+    content: map-get($flaticon_visa-map, "health-check");
+}
+.flaticon-departure:before {
+    content: map-get($flaticon_visa-map, "departure");
+}
+.flaticon-signage:before {
+    content: map-get($flaticon_visa-map, "signage");
+}
+.flaticon-directions:before {
+    content: map-get($flaticon_visa-map, "directions");
+}
+.flaticon-luggage-1:before {
+    content: map-get($flaticon_visa-map, "luggage-1");
+}
+.flaticon-escalator-1:before {
+    content: map-get($flaticon_visa-map, "escalator-1");
+}
+.flaticon-airport-1:before {
+    content: map-get($flaticon_visa-map, "airport-1");
+}
+.flaticon-global:before {
+    content: map-get($flaticon_visa-map, "global");
+}
+.flaticon-information:before {
+    content: map-get($flaticon_visa-map, "information");
+}
+.flaticon-life-raft:before {
+    content: map-get($flaticon_visa-map, "life-raft");
+}
+.flaticon-exit-1:before {
+    content: map-get($flaticon_visa-map, "exit-1");
+}
+.flaticon-location:before {
+    content: map-get($flaticon_visa-map, "location");
+}
+.flaticon-currency-1:before {
+    content: map-get($flaticon_visa-map, "currency-1");
+}
+.flaticon-bar-chart:before {
+    content: map-get($flaticon_visa-map, "bar-chart");
+}
+.flaticon-disabled-sign:before {
+    content: map-get($flaticon_visa-map, "disabled-sign");
+}
+.flaticon-passport-3:before {
+    content: map-get($flaticon_visa-map, "passport-3");
+}
+.flaticon-destination:before {
+    content: map-get($flaticon_visa-map, "destination");
+}
+.flaticon-passport-control-1:before {
+    content: map-get($flaticon_visa-map, "passport-control-1");
+}
+.flaticon-smartphone:before {
+    content: map-get($flaticon_visa-map, "smartphone");
+}
+.flaticon-refugee-camp:before {
+    content: map-get($flaticon_visa-map, "refugee-camp");
+}
+.flaticon-free-wifi:before {
+    content: map-get($flaticon_visa-map, "free-wifi");
+}
+.flaticon-rubber-stamp-1:before {
+    content: map-get($flaticon_visa-map, "rubber-stamp-1");
+}
+.flaticon-protect:before {
+    content: map-get($flaticon_visa-map, "protect");
+}
+.flaticon-checking:before {
+    content: map-get($flaticon_visa-map, "checking");
+}
+.flaticon-briefcase:before {
+    content: map-get($flaticon_visa-map, "briefcase");
+}
+.flaticon-signage-1:before {
+    content: map-get($flaticon_visa-map, "signage-1");
+}
+.flaticon-stamp:before {
+    content: map-get($flaticon_visa-map, "stamp");
+}
+.flaticon-passport-4:before {
+    content: map-get($flaticon_visa-map, "passport-4");
+}
+.flaticon-trolley:before {
+    content: map-get($flaticon_visa-map, "trolley");
+}
+.flaticon-travel-1:before {
+    content: map-get($flaticon_visa-map, "travel-1");
+}
+.flaticon-customs-agent:before {
+    content: map-get($flaticon_visa-map, "customs-agent");
+}
+.flaticon-itinerary:before {
+    content: map-get($flaticon_visa-map, "itinerary");
+}
+.flaticon-passport-5:before {
+    content: map-get($flaticon_visa-map, "passport-5");
+}
+.flaticon-passport-6:before {
+    content: map-get($flaticon_visa-map, "passport-6");
+}
+.flaticon-passport-7:before {
+    content: map-get($flaticon_visa-map, "passport-7");
+}
+.flaticon-ticket-1:before {
+    content: map-get($flaticon_visa-map, "ticket-1");
+}
+.flaticon-check:before {
+    content: map-get($flaticon_visa-map, "check");
+}
+.flaticon-passport-8:before {
+    content: map-get($flaticon_visa-map, "passport-8");
+}
+.flaticon-approved:before {
+    content: map-get($flaticon_visa-map, "approved");
+}
+.flaticon-health-check-1:before {
+    content: map-get($flaticon_visa-map, "health-check-1");
+}
+.flaticon-passport-9:before {
+    content: map-get($flaticon_visa-map, "passport-9");
+}
+.flaticon-itinerary-1:before {
+    content: map-get($flaticon_visa-map, "itinerary-1");
+}
+.flaticon-passport-10:before {
+    content: map-get($flaticon_visa-map, "passport-10");
+}
+.flaticon-passport-11:before {
+    content: map-get($flaticon_visa-map, "passport-11");
+}
+.flaticon-immigration-1:before {
+    content: map-get($flaticon_visa-map, "immigration-1");
+}
+.flaticon-licensing:before {
+    content: map-get($flaticon_visa-map, "licensing");
+}
+.flaticon-increase:before {
+    content: map-get($flaticon_visa-map, "increase");
+}
+.flaticon-passport-12:before {
+    content: map-get($flaticon_visa-map, "passport-12");
+}
+.flaticon-group:before {
+    content: map-get($flaticon_visa-map, "group");
+}
+.flaticon-life-insurance:before {
+    content: map-get($flaticon_visa-map, "life-insurance");
+}
+.flaticon-job-interview:before {
+    content: map-get($flaticon_visa-map, "job-interview");
+}
+.flaticon-passport-13:before {
+    content: map-get($flaticon_visa-map, "passport-13");
+}
+.flaticon-cooperation:before {
+    content: map-get($flaticon_visa-map, "cooperation");
+}
+.flaticon-rating:before {
+    content: map-get($flaticon_visa-map, "rating");
+}
+.flaticon-check-list:before {
+    content: map-get($flaticon_visa-map, "check-list");
+}
+.flaticon-documents:before {
+    content: map-get($flaticon_visa-map, "documents");
+}
+.flaticon-interview:before {
+    content: map-get($flaticon_visa-map, "interview");
+}
+.flaticon-camera:before {
+    content: map-get($flaticon_visa-map, "camera");
+}
+.flaticon-family-1:before {
+    content: map-get($flaticon_visa-map, "family-1");
+}
+.flaticon-graduate:before {
+    content: map-get($flaticon_visa-map, "graduate");
+}
+.flaticon-online-support:before {
+    content: map-get($flaticon_visa-map, "online-support");
+}
+.flaticon-loyalty:before {
+    content: map-get($flaticon_visa-map, "loyalty");
+}
+.flaticon-low-cost:before {
+    content: map-get($flaticon_visa-map, "low-cost");
+}
+.flaticon-approved-1:before {
+    content: map-get($flaticon_visa-map, "approved-1");
+}
+.flaticon-global-1:before {
+    content: map-get($flaticon_visa-map, "global-1");
+}
+.flaticon-passport-14:before {
+    content: map-get($flaticon_visa-map, "passport-14");
+}
+.flaticon-discount:before {
+    content: map-get($flaticon_visa-map, "discount");
+}
+.flaticon-stamp-1:before {
+    content: map-get($flaticon_visa-map, "stamp-1");
+}
+.flaticon-help:before {
+    content: map-get($flaticon_visa-map, "help");
+}
+.flaticon-passport-15:before {
+    content: map-get($flaticon_visa-map, "passport-15");
+}
+.flaticon-interview-1:before {
+    content: map-get($flaticon_visa-map, "interview-1");
+}
+.flaticon-form:before {
+    content: map-get($flaticon_visa-map, "form");
+}
+.flaticon-visa-3:before {
+    content: map-get($flaticon_visa-map, "visa-3");
+}
+.flaticon-passport-16:before {
+    content: map-get($flaticon_visa-map, "passport-16");
+}
+.flaticon-passport-17:before {
+    content: map-get($flaticon_visa-map, "passport-17");
+}
+.flaticon-document:before {
+    content: map-get($flaticon_visa-map, "document");
+}
+.flaticon-visa-4:before {
+    content: map-get($flaticon_visa-map, "visa-4");
+}
+.flaticon-passport-18:before {
+    content: map-get($flaticon_visa-map, "passport-18");
+}
+.flaticon-visa-5:before {
+    content: map-get($flaticon_visa-map, "visa-5");
+}
+.flaticon-passport-19:before {
+    content: map-get($flaticon_visa-map, "passport-19");
+}
+.flaticon-travel-2:before {
+    content: map-get($flaticon_visa-map, "travel-2");
+}
+.flaticon-passport-20:before {
+    content: map-get($flaticon_visa-map, "passport-20");
+}

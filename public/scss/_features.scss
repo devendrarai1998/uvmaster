@@ -1,0 +1,357 @@
+/*** 
+
+====================================================================
+    Features Section
+====================================================================
+
+***/
+
+.features-section {
+    position: relative;
+    padding: 120px 0 70px;
+    .image-column{
+        position: relative;
+        margin-bottom: 50px;
+        .inner-column{
+            margin-right: -375px;
+        }
+        .image{
+            margin-bottom: 0;
+        }
+    }
+    .bg{
+        right: 360px;
+        width: auto;
+    }
+}
+
+.feature-block {
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 1;
+    &:last-child{
+        .content{
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+    .inner-box {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        padding-left: 90px;
+        transition: all 300ms ease;
+        &:hover {
+            .icon{
+                background-color: #ffffff;
+                color: var(--theme-color2);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+            }
+        }
+    }
+    .content{
+        padding-bottom: 35px;
+        border-bottom: 1px solid #dcdcdd;
+        margin-bottom: 15px;
+    }
+    .icon {
+        position: absolute;
+        @include flex-center;
+        left: 0;
+        top: 5px;
+        height: 58px;
+        width: 58px;
+        font-size: 20px;
+        background-color: var(--theme-color2);
+        color: #ffffff;
+        border-radius: 50px;
+        transition: all 300ms ease;
+    }
+    .title {
+        display: block;
+        color: var(--theme-color1);
+        font-weight:800;
+        margin-bottom: 18px;
+        a {
+            color: var(--theme-color1);
+            transition: all 300ms ease;
+            &:hover {
+                color: var(--theme-color1);
+            }
+        }
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+}
+
+/*** 
+
+====================================================================
+    Features Section Two
+====================================================================
+
+***/
+
+.features-section-two{
+    position: relative;
+    z-index: 2;
+    .outer-box{
+        margin: 0 -110px;
+        .row{
+            margin: 0 -5px;
+            > div{
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+.feature-block-two{
+    position: relative;
+    margin-bottom: 30px;
+    &:nth-child(3n + 1) .inner-box{
+        background-image: url(../images/icons/feature-bg-1.png);
+    }
+    &:nth-child(3n + 2) .inner-box {
+        background-color: var(--bg-theme-color2);
+        background-image: url(../images/icons/feature-bg-2.png);
+        &::before{
+            opacity: .10;
+        }
+        .icon,
+        .text,
+        .title{
+            color: #ffffff;
+        }
+    }
+    &:nth-child(3n + 3) .inner-box {
+        background-image: url(../images/icons/feature-bg-3.png);
+        &::before {
+            background-color: #ffffff;
+            opacity: .10;
+        }
+        .title {
+            color: #ffffff;
+        }
+        .text{
+            color: #8f8f8f;
+        }
+    }
+    .inner-box {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        padding: 40px 50px 50px;
+        transition: all 300ms ease;
+        border-radius: 0 0 10px 10px;
+        @include background;
+        &:before{
+            position: absolute;
+            left:90px;
+            top: 58px;
+            height: 34px;
+            width: 34px;
+            background-color: var(--bg-theme-color1);
+            opacity: .05;
+            content: "";
+        }
+        &:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+            .image img {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .content {
+        position: relative;
+        padding-left: 90px;
+    }
+
+    .icon {
+        position: absolute;
+        @include flex-center;
+        left: 0;
+        top: 20px;
+        font-size: 62px;
+        line-height: 1em;
+        color: var(--theme-color2);
+        border-radius: 50px;
+        transition: all 300ms ease;
+    }
+
+    .title {
+        display: block;
+        color: var(--theme-color1);
+        font-weight: 800;
+        margin-bottom: 10px;
+        a {
+            color: var(--theme-color1);
+            transition: all 300ms ease;
+
+            &:hover {
+                color: var(--theme-color1);
+            }
+        }
+    }
+    
+    .text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+}
+
+/*** 
+
+====================================================================
+    Features Section Three
+====================================================================
+
+***/
+
+.features-section-three {
+    position: relative;
+    padding: 120px 0 70px;
+    background-color: #1d1729;
+    .features-column{
+        margin-bottom: 40px;
+    }
+
+    .title-column{
+        margin-bottom: 50px;
+        .inner-column{
+            padding-right: 50px;
+        }
+        .sec-title{
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.feature-block-three {
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box {
+        position: relative;
+        overflow: hidden;
+        transition: all 300ms ease;   
+        @include background;
+        padding: 30px 40px;
+        padding-right: 30px;
+        border: 1px solid rgba(255,255,255,.10);
+        &:hover{
+            border-color: var(--border-theme-color2);
+            background-color: var(--bg-theme-color2);
+            .icon{
+                color: #ffffff;
+            }
+        }
+    }
+
+    .content {
+        position: relative;
+        padding-left: 50px;
+    }
+
+    .icon {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        font-size: 30px;
+        line-height: 1em;
+        color: var(--theme-color2);
+        border-radius: 50px;
+        transition: all 300ms ease;
+    }
+
+    .title {
+        display: block;
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 0px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+}
+
+/*** 
+
+====================================================================
+    Features Section Four
+====================================================================
+
+***/
+
+.features-section-four {
+    position: relative;
+    padding: 120px 0;
+    z-index: 3;
+}
+
+.feature-block-five {
+    position: relative;
+
+    .inner-box {
+        padding: 60px 60px 50px;
+        background-color: #ffffff;
+        box-shadow: 0 10px 60px rgba(0, 0, 0, .1);
+        &:hover {
+            .content {
+                .icon {
+                    transform: rotateY(190deg);
+                    color: #ffffff;
+                }
+                .count{
+                    background-color: var(--bg-theme-color2);
+                    color: #ffffff;
+                }
+                &:before {
+                    opacity: .9;
+                }
+            }
+        }
+
+        .content {
+            position: relative;
+            padding-left: 100px;
+            .count {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 68px;
+                width: 68px;
+                font-size: 22px;
+                font-weight: 700;
+                color: var(--theme-color2);
+                @include flex-center;
+                background-color: var(--bg-theme-color3);
+                transition: all 300ms ease;
+            }
+
+            .title {
+                font-weight: 800;
+                margin-bottom: 15px;
+            }
+
+            .text {
+                position: relative;
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

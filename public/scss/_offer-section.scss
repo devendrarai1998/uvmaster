@@ -1,0 +1,125 @@
+/***
+
+==================================================================
+    Offer Section
+==================================================================
+
+***/
+
+.offer-section {
+    position: relative;
+    background-color: #181818;
+    &:before {
+        @include overlay;
+        @include background;
+        content: "";
+    }
+    .bg{
+        max-width: 55%;
+    }
+}
+
+.offer-section .content-column {
+    position: relative;
+
+    .inner-column {
+        position: relative;
+        padding: 130px 0 60px;
+    }
+
+    .sec-title {
+        margin-bottom: 80px;
+        .text{
+            margin-top: 45px;
+        }
+    }
+
+    .info-box {
+        position: relative;
+        margin-bottom: 70px;
+        &:hover {
+            .icon {
+                color: #fff;
+                transform: scaleX(-1);
+            }
+        }
+
+        .icon {
+            font-size: 64px;
+            color: var(--theme-color2);
+            line-height: 1em;
+            transition: all 300ms ease;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255, .10);
+        }
+
+        .title {
+            line-height: 30px;
+            margin-bottom: 0;
+            color: #fff;
+        }
+    }
+}
+
+.offer-section .image-column {
+    position: relative;
+
+    .inner-column {
+        position: relative;
+        padding-left: 70px;
+    }
+
+    .image-box {
+        position: relative;
+        margin-right: -375px;
+
+        .image {
+            position: relative;
+            margin-bottom: 0;
+            width: 100%;
+
+            img {
+                width: 100%;
+                min-height: 570px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .caption-box {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        max-width: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 130px 50px 130px;
+        &::before{
+            @include overlay;
+            background-color: var(--bg-theme-color2);
+            opacity: .9;
+            content: "";
+        }
+        .title {
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        .link{
+            position: relative;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            transition: all 300ms ease;
+            &:hover{
+                color: var(--theme-color1)
+            }
+        }
+    }
+
+}
